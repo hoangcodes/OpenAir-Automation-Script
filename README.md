@@ -20,7 +20,7 @@ This repo contains a script to help automate time tracking that professionals ha
 
 4. Open the developer console (Ctrl + Shift + J). Type in clear() or Ctrl + L to clear the console feed
 
-![Developer console](https://github.com/user-attachments/assets/d0f4f25e-104f-4b12-9d5f-18d89f4e4d76")
+![Developer console](https://github.com/user-attachments/assets/ce2ba312-5a42-428d-a191-b52396bb0898)
 
 5. Copy code from excel file and paste to the console. Remove the '' at the beginning and end of the code if you are copy and pasting from excel
 
