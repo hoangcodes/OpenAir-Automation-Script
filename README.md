@@ -12,7 +12,7 @@ This repo contains a script to help automate time tracking that professionals ha
 
 2. Open OpenAir on Chrome (or your browser of choice) and create a new timesheet
 
-![New Timesheet in OpenAir](https://github.com/user-attachments/assets/2176edaf-4b30-4ab7-b97c-d5bb5a984443)
+![New Timesheet in OpenAir](https://github.com/user-attachments/assets/8ce07e46-b746-45d7-b4e2-e64fd838cd66)
 
 3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do **NOT** use the copy icon ⎘)
 
@@ -27,6 +27,8 @@ This repo contains a script to help automate time tracking that professionals ha
 ![Result](https://github.com/user-attachments/assets/099fcd60-41ab-4836-95ca-2d34d202e4e7)
 
 6. Click Enter and the script should fire
+
+![HappyWeek](https://github.com/user-attachments/assets/41f20bd7-058c-4638-baac-d4cf0d666bf3)
 
 ## Data and Script
 
