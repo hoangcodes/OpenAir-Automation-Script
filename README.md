@@ -4,29 +4,44 @@
 
 This repo contains a script to help automate time tracking that professionals have to do on a weekly basis. Specifically for SuiteProjects : OpenAir
 
-## Get Started
+## Getting started (step-by-step guide)
 
 1. Download the excel file
-2. Open OpenAir on Chrome (or your browser of choice) and create a new Timesheet
-3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do NOT use the copy icon! The rows do not get created in sequential order, this is documented in known bugs)
-4. Open the developer console (Ctrl + Shift + J on Windows, Cmd + Option + J on Mac)
-5. Copy code from excel file and paste to the console (remember to remove the '' around the code if you are copy and pasting from excel)
 
-### Data and Script
+![Excel file template](image-5.png)
 
-Parameters
-| Parameter | Type    | Description                                                                                   | Constraints       | 
-| --------- | ------- | --------------------------------------------------------------------------------------------- | ----------------- |
-| row       | integer | Row number in OpenAir, 1 is the first row, 2 is the second row, and so on..                   | none              | 
-| col       | integer | Column number in OpenAir, In OpenAir, 3=Sunday, 4=Monday, 5=Tuesday.. 9=Saturday              | value must be 3-9 |
-| hours     | float   | Number of hours you want to input. In excel it automatically stores numbers as floats         | none              |
-| notes     | string  | Any comments the user wants to input into the comment section                                 | none              |
+2. Open OpenAir on Chrome (or your browser of choice) and create a new timesheet
 
+![New Timesheet in OpenAir](image-2.png)
 
-### Data in JSON format (this should change)
+3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do **NOT** use the copy icon! ⎘)
 
-The data structure MUST be in this JSON format
-```json
+![Step 3 Instructions](image-1.png)
+
+4. Open the developer console (Ctrl + Shift + J on Windows). Type in clear() or (Ctrl + L on Windows) to clear the console feed
+
+![Developer console](image-3.png)
+
+5. Copy code from excel file and paste to the console (remember to remove the '' at the beginning and end of the code if you are copy and pasting from excel)
+
+![Result](image-4.png)
+
+## Data and Script
+
+### Parameters
+
+| Parameter | Type    | Description                                                                           | Constraints       |
+| --------- | ------- | ------------------------------------------------------------------------------------- | ----------------- |
+| row       | integer | Row number in OpenAir, 1 is the first row, 2 is the second row, and so on..           | none              |
+| col       | integer | Column number in OpenAir, In OpenAir, 3=Sunday, 4=Monday, 5=Tuesday.. 9=Saturday      | value must be 3-9 |
+| hours     | float   | Number of hours you want to input. In excel it automatically stores numbers as floats | none              |
+| notes     | string  | Any comments the user wants to input into the comment section                         | none              |
+
+### Data in JSON format
+
+The data structure MUST be in this format:
+
+```js
 const data = [
   {row: 1, col: 3, hours: 4.0, notes: '[0000] EFT Bill Payment'},
   {row: 2, col: 3, hours: 4.0, notes: '[0001] Roles & Permissions'},
@@ -34,8 +49,9 @@ const data = [
 ]
 ```
 
-### Script that takes your timesheetData (from previous step) and fills out the information in OpenAir (this script does not change)
-```json
+### Script that takes data (from previous step) and fills out the information in OpenAir
+
+```js
 // Function that invokes a Promise, which is an async process (because Javascript is synchronous)
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -80,11 +96,11 @@ async function fillTimesheet() {
 fillTimesheet();
 ```
 
-### Known Bugs
+## Known Bugs
 
-Clicking the Copy icon
+### Clicking the Copy icon
 
-On the front-end, when a user clicks the copy icon, on the back-end the rows are not being created in sequential order. 
+On the front-end, when a user clicks the copy icon, on the back-end the rows are not being created in sequential order.
 
 For example, if you input Client : Engagement normally this will create rows in sequential order 1, 2, 3, 4, 5...
 
