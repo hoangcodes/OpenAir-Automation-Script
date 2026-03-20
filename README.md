@@ -41,7 +41,7 @@ This repo contains a script to help automate time tracking that professionals ha
 | hours     | float   | Number of hours you want to input. In excel it automatically stores numbers as floats | none              |
 | notes     | string  | Any comments the user wants to input into the comment section                         | none              |
 
-### Data in JSON format
+### Data
 
 The data structure MUST be in this format:
 
@@ -53,7 +53,7 @@ const data = [
 ]
 ```
 
-### Script that takes data (from previous step) and fills out the information in OpenAir
+### Script that takes timesheet data and fills out the information in OpenAir
 
 ```js
 // Function that invokes a Promise, which is an async process (because Javascript is synchronous)
