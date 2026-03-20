@@ -8,23 +8,25 @@ This repo contains a script to help automate time tracking that professionals ha
 
 1. Download the excel file
 
-![Excel file template](image-5.png)
+![Excel file template](https://github.com/user-attachments/assets/e171a4d6-d6ee-4a19-a3f2-7e9ebd590436)
 
 2. Open OpenAir on Chrome (or your browser of choice) and create a new timesheet
 
-![New Timesheet in OpenAir](image-2.png)
+![New Timesheet in OpenAir](https://github.com/user-attachments/assets/2176edaf-4b30-4ab7-b97c-d5bb5a984443)
 
-3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do **NOT** use the copy icon! ⎘)
+3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do **NOT** use the copy icon ⎘)
 
-![Step 3 Instructions](image-1.png)
+![Step 3 Instructions](https://github.com/user-attachments/assets/84d83fc1-00b3-445f-9ca8-5426e6a8556e)
 
-4. Open the developer console (Ctrl + Shift + J on Windows). Type in clear() or (Ctrl + L on Windows) to clear the console feed
+4. Open the developer console (Ctrl + Shift + J). Type in clear() or Ctrl + L to clear the console feed
 
-![Developer console](image-3.png)
+![Developer console](https://github.com/user-attachments/assets/d0f4f25e-104f-4b12-9d5f-18d89f4e4d76")
 
-5. Copy code from excel file and paste to the console (remember to remove the '' at the beginning and end of the code if you are copy and pasting from excel)
+5. Copy code from excel file and paste to the console. Remove the '' at the beginning and end of the code if you are copy and pasting from excel
 
-![Result](image-4.png)
+![Result](https://github.com/user-attachments/assets/099fcd60-41ab-4836-95ca-2d34d202e4e7)
+
+6. Click Enter and the script should fire
 
 ## Data and Script
 
