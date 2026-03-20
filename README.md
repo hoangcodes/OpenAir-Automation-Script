@@ -16,7 +16,7 @@ This repo contains a script to help automate time tracking that professionals ha
 
 3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do **NOT** use the copy icon ⎘)
 
-![Step 3 Instructions](https://github.com/user-attachments/assets/84d83fc1-00b3-445f-9ca8-5426e6a8556e)
+![Step 3 Instructions](https://github.com/user-attachments/assets/634abd70-d5c5-4795-a1c5-38e4135f6b7e)
 
 4. Open the developer console (Ctrl + Shift + J). Type in clear() or Ctrl + L to clear the console feed
 
