@@ -104,7 +104,7 @@ fillTimesheet();
 
 > If you use the copy icon, it will not create rows in sequential order. For example, 1, 5, 4, 3, 2... You see how 3, 4, and 5 got created in between 1 and 2 and 2 continued to get pushed down the list.
 
-> Solution: Recommend the user not to click the copy icon and to only create new rows via the Client : Engagement dropdown. The new roles get created automatically after the user inputs a Client : Engagement.
+> Solution: Recommend the user not to click the copy icon and to only create new rows via the Client : Engagement dropdown. The new rows get created automatically after the user inputs a Client : Engagement.
 
 ### Timesheet is end of the month
 
