@@ -32,7 +32,9 @@ const data = [
 ]
 ```
 
-### Script that takes timesheet data and fills out the information in OpenAir
+### Script
+
+JavaScript code that takes (timesheet) data and fills out the information in OpenAir, run in the console
 
 ```js
 // Function that invokes a Promise, which is an async process (because Javascript is synchronous)
