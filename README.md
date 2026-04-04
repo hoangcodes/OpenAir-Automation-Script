@@ -110,6 +110,8 @@ fillTimesheet();
 
 > You are going to need to create two separate timesheets for 1 week. So if Sunday-Tuesday is March, and Wednesday-Saturday is April you will create two timesheets, two CSVs, and run the script twice. I know, quite tedious. But if it helps, I think we all dislike how OpenAir is designed.
 
+![Edge-case-1-sucky](https://github.com/user-attachments/assets/f3e38711-e663-4c9b-a3b7-aadb074b1e60)
+
 ### Languages and Tools:
 
 <div align='left' width=100% margin-bottom:2px>
