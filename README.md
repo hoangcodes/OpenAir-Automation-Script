@@ -2,7 +2,7 @@
 
 ## About
 
-This repo contains a step-by-step guide to help automate time tracking on OpenAir.
+This repo contains a step-by-step guide to help professionals automate weekly time tracking, gathering data from Excel to SuiteProjects : OpenAir. This automation uses Bookmarklet, a small JavaScript application stored as a browser bookmark.
 
 ### Getting started (step-by-step guide)
 
@@ -19,15 +19,6 @@ This repo contains a step-by-step guide to help automate time tracking on OpenAi
 ![Timesheet Website](https://github.com/user-attachments/assets/def34f63-15ca-48c6-8b61-4637cbf29f56)
 
 ## Data and Script
-
-### Parameters
-
-| Parameter | Type    | Description                                                                           | Constraints       |
-| --------- | ------- | ------------------------------------------------------------------------------------- | ----------------- |
-| row       | integer | Row number in OpenAir, 1 is the first row, 2 is the second row, and so on..           | none              |
-| col       | integer | Column number in OpenAir, In OpenAir, 3=Sunday, 4=Monday, 5=Tuesday.. 9=Saturday      | value must be 3-9 |
-| hours     | float   | Number of hours you want to input. In excel it automatically stores numbers as floats | none              |
-| notes     | string  | Any comments the user wants to input into the comment section                         | none              |
 
 ### Data
 
@@ -87,6 +78,19 @@ async function fillTimesheet() {
 
 fillTimesheet();
 ```
+
+### Parameters
+
+| Parameter | Type    | Description                                                                           | Constraints       |
+| --------- | ------- | ------------------------------------------------------------------------------------- | ----------------- |
+| row       | integer | Row number in OpenAir, 1 is the first row, 2 is the second row, and so on..           | none              |
+| col       | integer | Column number in OpenAir, In OpenAir, 3=Sunday, 4=Monday, 5=Tuesday.. 9=Saturday      | value must be 3-9 |
+| hours     | float   | Number of hours you want to input. In excel it automatically stores numbers as floats | none              |
+| notes     | string  | Any comments the user wants to input into the comment section                         | none              |
+
+## Future additions
+
+> Fill out the Client : Engagement and Task data
 
 ## Known Bugs
 
