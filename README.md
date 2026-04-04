@@ -1,34 +1,22 @@
-# OpenAir-Automation-Script
+## OpenAir Timesheet Helper
 
 ## About
 
-This repo contains a script to help automate time tracking that professionals have to do on a weekly basis. Specifically for SuiteProjects : OpenAir
+This repo contains a step-by-step guide to help automate time tracking on OpenAir.
 
-## Getting started (step-by-step guide)
+### Getting started (step-by-step guide)
 
-1. Download the excel file
+1. Download the excel template on this website (repo), click the file above `Timesheet template v1.xlsx` and click `Download raw file` icon
 
-![Excel file template](https://github.com/user-attachments/assets/e171a4d6-d6ee-4a19-a3f2-7e9ebd590436)
+![Download template](https://github.com/user-attachments/assets/0b594ca3-6b7a-4484-a0fd-53b21aefd040)
 
-2. Open OpenAir on Chrome (or your browser of choice) and create a new timesheet
+2. Open OpenAir and fill out the **Client : Engagement** and **Task** for the week. You need to help expose the rows because the script can't brute force expose it. Currently, the script can only fill in **Time** and **Notes** information.
 
-![New Timesheet in OpenAir](https://github.com/user-attachments/assets/8ce07e46-b746-45d7-b4e2-e64fd838cd66)
+![New Timesheet in OpenAir](https://github.com/user-attachments/assets/5c284d28-f07b-47db-9fb5-1d65a09d1b2a)
 
-3. **Manually** fill out ALL the Client : Engagement column for your timesheet this week (Important: do **NOT** use the copy icon ⎘)
+3. Complete your timesheet data for the week and visit <a href="https://hoangcodes.github.io/openair-timesheet-helper/" target="_blank">https://hoangcodes.github.io/openair-timesheet-helper/</a> and follow the step-by-step guide there
 
-![Step 3 Instructions](https://github.com/user-attachments/assets/634abd70-d5c5-4795-a1c5-38e4135f6b7e)
-
-4. Open the developer console (Ctrl + Shift + J). Type in clear() or Ctrl + L to clear the console feed
-
-![Developer console](https://github.com/user-attachments/assets/ce2ba312-5a42-428d-a191-b52396bb0898)
-
-5. Copy code from excel file and paste to the console. Remove the '' at the beginning and end of the code if you are copy and pasting from excel
-
-![Result](https://github.com/user-attachments/assets/099fcd60-41ab-4836-95ca-2d34d202e4e7)
-
-6. Click Enter and the script should fire
-
-![HappyWeek](https://github.com/user-attachments/assets/41f20bd7-058c-4638-baac-d4cf0d666bf3)
+![Timesheet Website](https://github.com/user-attachments/assets/def34f63-15ca-48c6-8b61-4637cbf29f56)
 
 ## Data and Script
 
@@ -104,13 +92,17 @@ fillTimesheet();
 
 ### Clicking the Copy icon
 
-On the front-end, when a user clicks the copy icon, on the back-end the rows are not being created in sequential order.
+> On the front-end, when a user clicks the copy icon, on the back-end the rows are not being created in sequential order.
 
-For example, if you input Client : Engagement normally this will create rows in sequential order 1, 2, 3, 4, 5...
+> For example, if you input Client : Engagement normally this will create rows in sequential order 1, 2, 3, 4, 5...
 
-If you use the copy icon, it will not create rows in sequential order. For example, 1, 5, 4, 3, 2... You see how 3, 4, and 5 got created in between 1 and 2 and 2 continued to get pushed down the list.
+> If you use the copy icon, it will not create rows in sequential order. For example, 1, 5, 4, 3, 2... You see how 3, 4, and 5 got created in between 1 and 2 and 2 continued to get pushed down the list.
 
-Solution: Recommend the user not to click the copy icon and to only create new rows via the Client : Engagement dropdown. The new roles get created automatically after the user inputs a Client : Engagement.
+> Solution: Recommend the user not to click the copy icon and to only create new rows via the Client : Engagement dropdown. The new roles get created automatically after the user inputs a Client : Engagement.
+
+### Timesheet is end of the month
+
+> You are going to need to create two separate timesheets for 1 week. So if Sunday-Tuesday is March, and Wednesday-Saturday is April you will create two timesheets, two CSVs, and run the script twice. I know, quite tedious. But if it helps, I think we all dislike how OpenAir is designed.
 
 ### Languages and Tools:
 
