@@ -4,7 +4,7 @@
 
 This repo contains a step-by-step guide to help professionals automate weekly time tracking, gathering data from Excel to SuiteProjects : OpenAir. This automation uses Bookmarklet, a small JavaScript application stored as a browser bookmark.
 
-### Getting started (step-by-step guide)
+## Getting started (step-by-step guide)
 
 1. Download the excel template on this website (repo), click the file above `Timesheet template v1.xlsx` and click `Download raw file` icon
 
