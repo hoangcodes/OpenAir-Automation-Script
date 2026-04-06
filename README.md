@@ -12,7 +12,7 @@ This repo contains a step-by-step guide to help professionals automate weekly ti
 
 2. Open OpenAir and fill out the **Client : Engagement** and **Task** for the week. You need to help expose the rows because the script can't brute force expose it. Currently, the script can only fill in **Time** and **Notes** information.
 
-![New Timesheet in OpenAir](https://github.com/user-attachments/assets/5c284d28-f07b-47db-9fb5-1d65a09d1b2a)
+![New Timesheet in OpenAir](https://github.com/user-attachments/assets/57cb4bd4-6a1f-4b73-ae65-57c566688665)
 
 3. Complete your timesheet data for the week and visit <a href="https://hoangcodes.github.io/openair-timesheet-helper/" target="_blank">https://hoangcodes.github.io/openair-timesheet-helper/</a> and follow the step-by-step guide there
 
